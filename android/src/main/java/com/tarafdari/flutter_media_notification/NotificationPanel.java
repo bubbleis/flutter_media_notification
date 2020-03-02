@@ -98,8 +98,7 @@ public class NotificationPanel extends Service {
 
     @Override
     public void onDestroy() {
-        FlutterMediaNotificationPlugin.callEvent("stop");
-        super.onDestroy();
+        // super.onDestroy();
     }
 
     @Override

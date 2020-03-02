@@ -98,7 +98,7 @@ public class NotificationPanel extends Service {
 
     @Override
     public void onDestroy() {
-        // super.onDestroy();
+        super.onDestroy();
     }
 
     @Override
@@ -125,7 +125,6 @@ public class NotificationPanel extends Service {
 
     @Override
     public void onTaskRemoved(Intent rootIntent) {
-        FlutterMediaNotificationPlugin.callEvent("stop");
         stopForeground(true);
     }
 }
